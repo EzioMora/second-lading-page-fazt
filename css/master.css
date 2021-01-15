@@ -1,0 +1,290 @@
+/* 
+  Styles Guide:
+  0. Reset
+  1. Layout
+  2. Generic
+  3. Generic Itens
+  4. List
+  5. Form
+  6. Animations
+  -----------------
+  Colors:
+    color1 => #2c3e50;
+    color2 => #34495e;
+    color3 => #3498db;
+    color4 => #fff;
+*/
+
+/* 0. Reset */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 1. Layout */
+
+body {
+  text-align: center;
+  font: 300 20px/1.7 'Roboto Condensed';
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navBar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-services figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+
+.tarifas {
+  text-align: left;
+}
+
+.pie {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* 2. Generic Itens */
+.header {
+  height: 450px;
+  background: url(../imagenes/dummy-header.jpg) no-repeat center top; background-size: cover;
+}
+
+.navBar {
+  height: 63px;
+  background: #2c3e50;
+}
+  .navBar a {
+    color: #fff;
+    padding: 0 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 20px;
+    font-family: 'Stint Ultra Condensed';
+  }
+    .navBar a:hover {
+      color: #3498db;
+    }
+
+.title {
+  margin-bottom: 40px; font: 60px 'Stint Ultra Condensed'; 
+  text-transform: uppercase;
+}
+
+p {
+  margin-bottom: 40px;
+}
+
+.btn {
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px 40px;
+  text-decoration: none;
+  display: inline-block;
+}
+  .tarifas a:hover {
+    color: #3498db;
+    background: #fff;
+  }
+
+.pie {
+  background: #2c3e50;
+}
+  .contact {
+    padding: 10px 30px;
+  }
+    .pie a {
+      text-decoration: none;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: 20px;
+      font-family: 'Stint Ultra Condensed';
+    }
+      .pie a:hover {
+      color: #3498db;
+      }
+.icons li {
+  display: inline-block;
+  padding: 0 10px;
+}
+  .icons i {
+    font-size: 450%;
+    padding: 0 40px;
+  }
+    .icons i:hover {
+      color: #3498db;
+    }
+.footer {
+  background: #2c3e50;
+  border-top: 1px solid #fff;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+/* 3. Parts Of the Web */
+.content {
+  padding: 80px 0;
+}
+
+.who {
+  background: #2c3e50;
+  color: #fff;
+}
+  .who p {
+    max-width: 1055px;
+    margin: 0 auto;
+  }
+
+.services {
+  background: #34495e;
+  color: #fff;
+}
+
+.tarifas {
+  background: url(../imagenes/dummy-tarifas.jpg) no-repeat center top;
+  background-size: cover;
+  color: #fff;
+}
+  .contain {
+    max-width: 1055px;
+    margin: 0 auto;
+  }
+  .tarifas p {
+    max-width: 450px;
+  }
+
+.localizacion {
+  color: #34495e;
+  padding-bottom: 0;
+}
+  .map img {
+    max-width: 100%;
+    width: 100%;
+  }
+
+.pie {
+  max-width: 100%;
+}
+  .pieNav {
+    width: 25%;
+  }
+
+.footer {
+  padding: 0;
+}
+  .footer p {
+    padding: 0;
+    margin-bottom: 0px;
+    margin: 10px auto;
+  }
+    .footer a {
+        text-decoration: none;
+        color: #fff;
+      }
+        .footer a:hover {
+          color: #3498db;
+        }
+/* 4. List */
+.list-services figure {
+  position: relative;
+  width: 150px;
+  height: 190px;
+}
+  .list-services figure:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50%;
+    z-index: 0;
+    background: #fff;
+    width: 150px;
+    height: 150px;
+  }
+
+  .list-services img {
+    position: relative;
+    z-index: 1;
+  }
+  .list-services li {
+    padding: 0 30px;
+  }
+  .list-services figcaption {
+    position: relative;
+    top: 10px;
+    left: 0;
+    bottom: -40px;
+  }
+
+/* 5. Form */
+
+/* 6. Animations */
